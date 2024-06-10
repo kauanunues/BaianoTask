@@ -12,10 +12,10 @@ export default function Welcome() {
          />
       </View>
       <View style={styles.content}>
-         <Text style={styles.title}>Frama To Do List</Text>
-         <Text style={styles.text}>Monte sua lista de tarefas e tenha um melhor controle da sua rotina!! </Text>
+         <Text style={styles.title}>Baino Task</Text>
+         <Text style={styles.text}>Monte sua lista e pare de Durmir </Text>
         <Link style={styles.button} href={"/home"}>
-          <Text style={styles.buttonText}>Acessar</Text>
+          <Text style={styles.buttonText}>Entrar</Text>
         </Link>
       </View>
       <StatusBar style="light" backgroundColor='#000' />
