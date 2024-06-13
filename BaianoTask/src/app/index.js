@@ -18,7 +18,7 @@ export default function Welcome() {
           <Text style={styles.buttonText}>Entrar</Text>
         </Link>
       </View>
-      <StatusBar style="light" backgroundColor='#000' />
+      <StatusBar style="dark" backgroundColor='#fff' />
     </View>
   );
 }
@@ -26,7 +26,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D9B0B7',
+    backgroundColor: '#ffa500',
   },
   imagecontainer: {
     flex: 2,

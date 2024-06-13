@@ -20,7 +20,7 @@ export default function Home() {
  const saveItemToDevice = async  (items) => {
   try {
     const itemJson = JSON.stringify(items);
-    await AsyncStorage.setItem('FramaToDoList', itemJson);
+    await AsyncStorage.setItem('Baiano Task', itemJson);
   } catch (error) {
     console.log(`Erro: ${error}`);
   }
@@ -28,7 +28,7 @@ export default function Home() {
 
  const getItemsFromDevice = async() => {
   try {
-    const items = await AsyncStorage.getItem('FramaToDoList');
+    const items = await AsyncStorage.getItem('Baiano Task');
     if (items != null ) {
       setItems(JSON.parse(items));
     }
@@ -108,7 +108,7 @@ export default function Home() {
       >
         <View style={styles.header}>
           <Text style={styles.title}>Lista de tarefas</Text>
-          <Ionicons name="trash" size={32} color='#fff' onPress={removeAll} />
+          <Ionicons name="trash" size={32} color='#ffa500' onPress={removeAll} />
         </View>
 
         {/* Lista de tarefas*/}
@@ -130,7 +130,7 @@ export default function Home() {
             <TextInput 
               color= '#fff'
               fontSize={18}
-              placeholderTextColor='#aeaeae'
+              placeholderTextColor='#ffa500'
               placeholder='Digite a tarefa...'
               value={textInput}
               onChangeText={(text) => setTextInput(text)}
